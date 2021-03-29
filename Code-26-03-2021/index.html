@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+<!--    <script src="script.js" defer></script>-->
+<!--    <script src="script1.js" defer></script>-->
+    <script src="script2.js" defer></script>
+
+    <style>
+        body {
+            display: flex;
+            padding: 10px;
+        }
+
+        .square {
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .square.selected {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow  {
+            background-color: yellow;
+        }
+
+        .green  {
+            background-color: green;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" integrity="sha512-/seDHxVfh1NvFUscAj8GsHQVZJvr2jjAoYsNL7As2FCaFHUHYIarl3sRCvVlFgyouVNiRgHIebyLKjpgd1SLDw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+</head>
+<body>
+<p id="playerInfo"></p>
+
+<script type="text/template" id="list-template">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><%-title%></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <% links.forEach(function(item) { %>
+                <li><a href="<%-item.link%>"><%-item.text%></a></li>
+                <% }); %>
+            </ul>
+        </div>
+    </nav>
+</script>
+</body>
+</html>
