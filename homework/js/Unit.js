@@ -1,6 +1,6 @@
-function Unit(type, health, maxHealth, maxDistance) {
-    this.type = type;
+function Unit(typeUser, health, maxHealth, distance) {
+    this.typeUser = typeUser;
     this.health = health;
     this.maxHealth = maxHealth;
-    this.maxDistance = maxDistance;
+    this.distance = distance;
 }
